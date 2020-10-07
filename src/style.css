@@ -5,7 +5,7 @@ body {
 }
 .card {
   background: white;
-  margin: auto;
+  margin: 50px auto;
   height: 500px;
   width: 350px;
   padding: 15px;
@@ -16,16 +16,15 @@ body {
 }
 h1 {
     text-align: center;
-
 }
 /* antes */
-.card.heart::before {
+.card.corazon::before {
   content: "\2665";
   color: red;
   font-size: 80px;
   padding: 20px;
 }
-.card.picas::before {
+.card.pica::before {
   content: "\2660";
   color: black;
   font-size: 80px;
@@ -44,7 +43,7 @@ h1 {
   padding: 20px;
 }
 /* after*/
-.card.heart::after {
+.card.corazon::after {
   content: "\2665";
   color: red;
   font-size: 80px;
@@ -52,7 +51,7 @@ h1 {
   display: inline-block;
   transform: rotate(180deg);
 }
-.card.picas::after {
+.card.pica::after {
   content: "\2660";
   font-size: 80px;
   margin-left: 260px;
