@@ -1,3 +1,75 @@
+
 body {
-    background-color: #ffe9c1;
+  background-color: green;
+  box-sizing: border-box;
+}
+.card {
+  background: white;
+  margin: auto;
+  height: 500px;
+  width: 350px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  font-size: 60px;
+}
+h1 {
+    text-align: center;
+
+}
+/* antes */
+.card.heart::before {
+  content: "\2665";
+  color: red;
+  font-size: 80px;
+  padding: 20px;
+}
+.card.picas::before {
+  content: "\2660";
+  color: black;
+  font-size: 80px;
+  padding: 20px;
+}
+.card.trebol::before {
+  content: "\2663";
+  color: black;
+  font-size: 80px;
+  padding: 20px;
+}
+.card.rombo::before {
+  content: "\2666";
+  color: black;
+  font-size: 80px;
+  padding: 20px;
+}
+/* after*/
+.card.heart::after {
+  content: "\2665";
+  color: red;
+  font-size: 80px;
+  margin-left: 260px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.card.picas::after {
+  content: "\2660";
+  font-size: 80px;
+  margin-left: 260px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.card.trebol::after {
+  content: "\2663";
+  font-size: 80px;
+  margin-left: 260px;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.card.rombo::after {
+  content: "\2666";
+  font-size: 80px;
+  margin-left: 260px;
+  display: inline-block;
+  transform: rotate(180deg);
 }
